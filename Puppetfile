@@ -56,4 +56,8 @@ github "xquartz",    "1.1.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-github "phpstorm", "1.0.3", :repo => "gblair/puppet-phpstorm"
+#github "phpstorm", "1.0.3", :repo => "gblair/puppet-phpstorm"
+github "spotify", "1.0.1"
+github "transmit", "1.0.1"
+github "iterm2", "1.0.6"
+github "textwrangler", "1.0.3"

@@ -58,6 +58,12 @@ node default {
   include hub
   include nginx
 
+  #include phpstorm
+  include spotify
+  include transmit
+  include iterm2::stable
+  include textwrangler
+
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
@@ -87,4 +93,8 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+}
+
+class { 'nodejs::global':
+  version => 'v0.10'
 }
